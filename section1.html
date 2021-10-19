@@ -24,7 +24,44 @@
 
     <!-- Page content -->
     <div class="content">
-        This is section 1.
+        For the long term, I want to use this to advertise projects. In the meantime, here's some cats.<br>
+        (Click on the image for larger)<br>
+
+        <button onclick="show()">Click Me</button>
+        <!-- The grid: four columns -->
+        <div class="row" id="theCats" style="display: none;">
+          <div class="column">
+            <img src="img/cat1.jpg" style="width: 200px; height: 200px;" alt="Cute Cat" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="img/cat2.jpg" style="width: 200px; height: 200px;" alt="Cute Cat 2" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="img/cat3.jpg" style="width: 200px; height: 200px;" alt="Cute Cat 3" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="img/cat4.jpg" style="width: 200px; height: 200px;" alt="Cute Cat 4" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="img/cat5.jpeg" style="width: 200px; height: 200px;" alt="Cute Cat 5" onclick="myFunction(this);">
+          </div>
+          <!-- The expanding image container -->
+          <div class="container">
+            <!-- Close the image -->
+
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            </img>
+
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+          </div>
+      </div>
+
+
+
     </div>
 
 </body>
