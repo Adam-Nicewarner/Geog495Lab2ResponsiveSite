@@ -13,6 +13,7 @@ function responsive_control() {
 }
 
 function myFunction(imgs) {
+  console.log("myF ran")
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
   // Get the image text

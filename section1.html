@@ -27,7 +27,11 @@
         For the long term, I want to use this to advertise projects. In the meantime, here's some cats.<br>
         (Click on the image for larger)<br>
 
-        <button onclick="show()">Click Me</button>
+        <!-- Rounded switch -->
+        <label class="switch">
+          <input type="checkbox" onclick="show()">
+          <span class="slider round"></span>
+        </label>
         <!-- The grid: four columns -->
         <div class="row" id="theCats" style="display: none;">
           <div class="column">
@@ -47,10 +51,11 @@
           </div>
           <!-- The expanding image container -->
           <div class="container">
-            <!-- Close the image -->
+
 
             <!-- Expanded image -->
             <img id="expandedImg" style="width:100%">
+              <!-- Close the image -->
               <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
             </img>
 
